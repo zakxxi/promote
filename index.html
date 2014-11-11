@@ -9,7 +9,9 @@
         <link rel="shortcut icon" href="images/favicon.png">
         <title>Index</title>
         <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <!-- Font awsome core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="styles.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,21 +19,295 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+        <!-- GOOGLE MAPS -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1FzvmCG96txW30pW7sHdJrKmoG82gJ1s">
+    </script>
+        <script src="map.js"></script>
     </head>
-    <body>
-
+    <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+        <header class="">
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Le Wellness</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#description">Description</a>
+                            </li>
+                            <li>
+                                <a href="#description">Video</a>
+                            </li>
+                            <li>
+                                <a href="#logements">Logements</a>
+                            </li>
+                            <li>
+                                <a href="#localisation">Localisation</a>
+                            </li>
+                            <li>
+                                <a href="#plaquette">Plaquette</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="sliderTop" class="carousel slide hidden-xs" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#sliderTop" data-slide-to="0" class="active"></li>
+                    <li data-target="#sliderTop" data-slide-to="1"></li>
+                    <li data-target="#sliderTop" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="http://placehold.it/2000x500.jpg" alt=""/>
+                        <div class="carousel-caption">
+                            <h3>Slide 1 title</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/2000x500.jpg" alt=""/>
+                        <div class="carousel-caption">
+                            <h3>Slide 2 title</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/2000x500.jpg" alt=""/>
+                        <div class="carousel-caption">
+                            <h3>Slide 3 title</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#sliderTop" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#sliderTop" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </header>
+        <main class="">
+            <section class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h1 class="text-primary margins-tb-30">Le Wellness </h1>
+                            <h2 class="text-muted margins-tb-10">Vivre à fleur d’eau à Montpellier</h2>
+                            <h3 class="margins-tb-10"><span class="label label-danger">4e trimestre 2016</span></h3>
+                        </div>
+                    </div>
+                    <div class="row margins-tb-30">
+                        <div class="text-center col-xs-12">
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-tree fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-bicycle fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-bus fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-road fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="" id="description">
+                <div class="container-fluid bg-primary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3 class="margins-tb-20">Description</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-push-6 resetP">
+                                <img src="http://placehold.it/1280x720.jpg" class="img-responsive"/>
+                            </div>
+                            <div class="col-sm-6 col-sm-pull-6">
+                                <p>Desservie par de grands axes routiers, par les lignes de Tramway 1 et 3, ainsi que par un réseau sécurisé de pistes cyclables, cette réalisation d’exception est aussi proche du coeur de Montpellier que de l’agglomération, des plages et de l’aéroport. Et grâce à la proximité de toutes les commodités et des nombreuses structures de loisirs, « Le Wellness » offre une incomparable qualité de vie.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1 text-center">
+                                <h2 class="lead margins-tb-30">C’est dans ce contexte, entre modernité et développement durable, <br/> que vous accueille « Le Wellness ».</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 resetP">
+                                <img src="http://placehold.it/1280x720.jpg" class="img-responsive"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Desservie par de grands axes routiers, par les lignes de Tramway 1 et 3, ainsi que par un réseau sécurisé de pistes cyclables, cette réalisation d’exception est aussi proche du coeur de Montpellier que de l’agglomération, des plages et de l’aéroport. Et grâce à la proximité de toutes les commodités et des nombreuses structures de loisirs, « Le Wellness » offre une incomparable qualité de vie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="" id="video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h3 class="margins-tb-20 text-primary">Video</h3>
+                        </div>
+                        <div class="col-xs-12 resetP">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/GM1RoPsVGUA"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="" id="logements">
+                <div class="container-fluid bg-primary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3 class="margins-tb-20">Logements disponibles</h3>
+                            </div>
+                            <div class="col-md-12 text-center"></div>
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Dispo.</th>
+                                                <th>Superficie</th>
+                                                <th>Prix</th>
+                                                <th>Plan type</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>T1</td>
+                                                <td>2</td>
+                                                <td>de 43 m² à 46.7 m²</td>
+                                                <td>de 195 000 € à 245 000 €</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-xs">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Visualiser
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>T2</td>
+                                                <td>11</td>
+                                                <td>de 43 m² à 46.7 m²</td>
+                                                <td>de 195 000 € à 245 000 €</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-xs">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Visualiser
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>T3</td>
+                                                <td>13</td>
+                                                <td>de 43 m² à 46.7 m²</td>
+                                                <td>de 195 000 € à 245 000 €</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-xs">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Visualiser
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>T4</td>
+                                                <td>7</td>
+                                                <td>de 43 m² à 46.7 m²</td>
+                                                <td>de 195 000 € à 245 000 €</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-xs">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Visualiser
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>T5</td>
+                                                <td>2</td>
+                                                <td>de 43 m² à 46.7 m²</td>
+                                                <td>de 195 000 € à 245 000 €</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-xs">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Visualiser
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"></div>
+            </section>
+            <section class="" id="localisation">
+                <div class="container-fluid resetP">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h3 class="margins-tb-20 text-primary">Localisation </h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 resetP">
+                        <div id="map-canvas-1"></div>
+                    </div>
+                    <div class="col-sm-6 resetP">
+                        <div id="map-canvas-2"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-offset-1 col-sm-4">
+                            <div class="panel panel-primary margins-tb-30">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title text-center">Accès et distances</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Rives du Lez, Parc Marianne, Bassin Jacques Coeur</li>
+                                        <li>Hôtel de Ville, Centre historique</li>
+                                        <li>Pôle universitaire de Richter</li>
+                                        <li>Centre Commercial Odysseum</li>
+                                        <li>Plages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <div class="panel panel-primary margins-tb-30">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title text-center">À proximité</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Rives du Lez, Parc Marianne, Bassin Jacques Coeur</li>
+                                        <li>Hôtel de Ville, Centre historique</li>
+                                        <li>Pôle universitaire de Richter</li>
+                                        <li>Centre Commercial Odysseum</li>
+                                        <li>Plages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
- 
         <!-- Custom JavaScript
     ================================================== -->
-        <script src="assets/js/holder.js"></script>
         <script src="main.js"></script>
-       
     </body>
 </html>
